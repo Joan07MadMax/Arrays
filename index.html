@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Todo sobre los arrays</title>
+  </head>
+  <body>
+    <p>
+      <hr>¿Cómo declarar arrays?
+    <h4 id="declarar_arrays"></h4>
+    </p>
+  <hr>
+  <p>¿Cómo obtener el primer elemento del array?
+  <h4 id="acceder_primer_elemento"></h4>
+</p>
+<hr>
+<p>¿Cómo obtener el segundo elemento del array?
+<h4 id="acceder_segundo_elemento"></h4>
+</p>
+<hr>
+<p> ¿Cómo obtener el tercer elemento del array?
+<h4 id="acceder_tercer_elemento"></h4>
+</p>
+<hr>
+<p>¿Cómo obtener la longitud del array?
+<h4 id="ver_longitud_del_array"></h4>
+</p>
+<hr>
+<p>¿Cómo crear un bucle del array?
+<h4 id="bucle_del_array"></h4>
+</p>
+<hr>
+<p>¿Cómo añadir un elemento al final de un array?
+<h4 id="añadir_elemento_al_final_de_un_array"></h4>
+</p>
+<hr>
+<p>¿Cómo añadir más elementos al final de un array?
+<h4 id="añadir_más_elementos_al_final_de_un_array"></h4>
+</p>
+</body>
+<script>
+  var frutas = ["Manzana", "Mango", "Piña"];
+  console.log(frutas);
+  document.getElementById("declarar_arrays").innerHTML = frutas;
+  
+  var primera_fruta = fruta[0];
+  console.log(primera_fruta);
+  document.getElementById("acceder_primer_elemento").innerHTML = primera_fruta;
+  
+  var segunda_fruta = frutas[1];
+  console.log(segunda_fruta);
+  document.getElementById("acceder_segundo_elemento").innerHTML = primera_fruta;
+  
+  var tercera_fruta = frutas[2];
+  console.log(tercera_fruta);
+  document.getElementById("acceder_tercer_elemento").innerHTML = tercera_fruta;
+  
+  var longitud_del_array = frutas.length;
+  console.log(longitud_del_array);
+  document.getElementById("ver_longitud_del_array").innerHTML = longitud_del_array;
+  
+  var valor_array = "";
+  for (i = 0; i < frutas.length; i++) {
+       console.log(frutas[i]);
+       valor_array = valor_array + frutas[i] + "<br>";
+    }
+  document.getElementById("bucle_del_array").innerHTML = valor_array;
+
+  frutas.push("Limón");
+  console.log(frutas);
+  document.getElementById("añadir_elemento_al_final_de_un_array").innerHTML = frutas;
+  
+  frutas.push("Cereza");
+    console.log(frutas);
+    document.getElementById("añadir_más_elementos_al_final_de_un_array").innerHTML = frutas;
+</script>
+</html>
+
